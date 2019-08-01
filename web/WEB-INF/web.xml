@@ -22,4 +22,12 @@
         <servlet-name>CreateEmployee</servlet-name>
         <url-pattern>/employee/form</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ListEmployee</servlet-name>
+        <servlet-class>controller.CreateEmployeeController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListEmployee</servlet-name>
+        <url-pattern>/employee/list</url-pattern>
+    </servlet-mapping>
 </web-app>

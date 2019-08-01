@@ -1,6 +1,11 @@
 package entity;
 
+import com.googlecode.objectify.annotation.Entity;
+import com.googlecode.objectify.annotation.Id;
+
+@Entity
 public class Employee {
+    @Id
     private long id;
     private String fullName;
     private String birthday;
