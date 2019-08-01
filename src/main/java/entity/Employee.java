@@ -3,6 +3,8 @@ package entity;
 import com.googlecode.objectify.annotation.Entity;
 import com.googlecode.objectify.annotation.Id;
 
+import java.util.Calendar;
+
 @Entity
 public class Employee {
     @Id
@@ -14,6 +16,7 @@ public class Employee {
     private String department;
 
     public Employee() {
+        this.id = Calendar.getInstance().getTimeInMillis();
     }
 
     public long getId() {
