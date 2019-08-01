@@ -30,4 +30,22 @@
         <servlet-name>ListEmployee</servlet-name>
         <url-pattern>/employee/list</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>ObjecttifyFilter</filter-name>
+        <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ObjecttifyFilter</filter-name>
+        <servlet-name>/*</servlet-name>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>ObjecttifyFilter1</filter-name>
+        <filter-class>helper.ObjectifyHeper</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ObjecttifyFilter1</filter-name>
+        <servlet-name>/*</servlet-name>
+    </filter-mapping>
 </web-app>
