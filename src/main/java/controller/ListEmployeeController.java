@@ -19,11 +19,7 @@ public class ListEmployeeController extends HttpServlet {
         req.setAttribute("list", list);
         req.setAttribute("name", "Hello Test!");
         req.getRequestDispatcher("/employee/list.jsp").forward(req, resp);
-        try {
 
-        }catch (Exception catchException){
-
-        }
     }
 }
 
