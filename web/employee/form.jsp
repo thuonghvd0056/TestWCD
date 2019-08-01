@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="reset" value="RESET" class="btn-primary" >RESET</input>
+                    <input type="reset" value="RESET" class="btn-primary"></input>
                     <input type="submit" value="SAVE" class="btn-success"></input>
                 </div>
             </form>
